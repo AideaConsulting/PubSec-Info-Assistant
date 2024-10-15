@@ -209,12 +209,12 @@ variable "openAiSkuName" {
 
 variable "chatGptDeploymentName" {
   type    = string
-  default = "gpt-4o-mini"
+  default = "gpt-35-turbo-16k"
 }
 
 variable "chatGptModelName" {
   type    = string
-  default = "gpt-4o-mini"
+  default = "gpt-35-turbo-16k"
 }
 
 variable "chatGptModelSkuName" {
@@ -225,7 +225,7 @@ variable "chatGptModelSkuName" {
 
 variable "chatGptModelVersion" {
   type    = string
-  default = "2024-07-18"
+  default = "0613"
 }
 
 variable "chatGptDeploymentCapacity" {
@@ -395,13 +395,13 @@ variable "appServicePlanName" {
 variable "appServiceSkuSize" {
   description = "The size of the app service plan for the IA website. Must match with the tier value in appServiceSkuTier."
   type = string
-  default = "F1"
+  default = "S1"
 }
 
 variable "appServiceSkuTier" {
   description = "The tier of the app service plan for the IA website. Must match with the size value in appServiceSkuSize."
   type = string
-  default = "Free"
+  default = "Standard"
   
 }
 
@@ -413,13 +413,13 @@ variable "enrichmentAppServicePlanName" {
 variable "enrichmentAppServiceSkuSize" {
   description = "The size of the app service plan for the enrichment service. Must match with the tier value in enrichmentAppServiceSkuTier."
   type = string
-  default = "F1"
+  default = "P2v3"
 }
 
 variable "enrichmentAppServiceSkuTier" {
   description = "The tier of the app service plan for the enrichment service. Must match with the size value in enrichmentAppServiceSkuSize."
   type = string
-  default = "Free"
+  default = "PremiumV3"
 }
 
 variable "logAnalyticsName" {
@@ -450,13 +450,13 @@ variable "functionsAppName" {
 variable "functionsAppSkuSize" {
   description = "The size of the app service plan for the functions app. Must match with the tier value in functionsAppSkuTier."
   type = string
-  default = "F1"
+  default = "S2"
 }
 
 variable "functionsAppSkuTier" {
   description = "The tier of the app service plan for the functions app. Must match with the size value in functionsAppSkuSize."
   type = string
-  default = "Free"
+  default = "Standard"
 }
 
 variable "searchServicesName" {
